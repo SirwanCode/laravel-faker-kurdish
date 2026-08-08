@@ -1,0 +1,29 @@
+{
+    "name": "sirwancode/laravel-faker-kurdish",
+    "description": "Kurdish ( sorani & kurmanji ) faker package for laravel framework",
+    "type": "library",
+    "authors": [
+        {
+            "name": "sirwancode",
+            "email": "sirwancode@gmail.com"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+          "sirwancode\\laravelfakerkurdish\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "sirwancode\\laravelfakerkurdish\\KuFakerServiceProvider"
+            ]
+            
+        }
+    },
+    "require": {
+        
+
+    }
+}
