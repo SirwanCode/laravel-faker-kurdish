@@ -122,6 +122,7 @@ pakêtê bi composer saz bike
 
 composer require sirwancode/laravel-faker-kurdish
 
+
 ```
 
  
