@@ -1,7 +1,7 @@
  #   🚀Kurdish Faker   
  
 A comprehensive Kurdish (Sorani and Kurmanji) Faker for  Laravel Framework, providing realistic fake data for testing, development, and database seeding.  
-
+<!--[![Total Downloads](https://img.shields.io/packagist/dt/sirwancode/laravel-faker-kurdish)](https://packagist.org/packages/sirwancode/laravel-faker-kurdish)-->
 ## ✨ Features
 
 - 👤 Generate realistic Kurdish (Sorani and Kurmanji) values
