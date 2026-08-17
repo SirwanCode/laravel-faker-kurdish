@@ -198,6 +198,79 @@ Class li kontrolkera xwe an li her deverê ku hûn hewce ne zêde bikin
 use sirwancode\laravelfakerkurdish\KuFaker;
 ```
 
+---
+
+## ➿ دامەزراندنی دەستی
+
+ئەگەر دەتەوێت  بە شێوەی دەستی دابمەزرێنیت، ئەم هەنگاوانەی خوارەوە جێبەجێ بکە.
+
+### 1. پاکەتەکە دابەزێنە
+
+نوێترین وەشانی پاکەتەکە دابەزێنە و فایلەکەی لە حالت فشردەکراو دەربهێنە.
+
+### 2. پاکەتەکە زیاد بکە بۆ پڕۆژەکەت
+
+لە فۆڵدەری سەرەکیی پڕۆژەی Laravel ـەکەتدا  فۆڵدەری  `packages`  دروست بکە و پاکەتەکە لەناوی ئەودا دابنێ. 
+
+پێکهاتەی پڕۆژەکەت دەبێت بەم شێوەیە بێت:
+
+```text
+myproject/
+├── app/
+├── config/
+├── resources/
+├── routes/
+├── vendor/
+└── packages/
+    └── laravel-faker-kurdish/
+        ├── src/
+        ├── composer.json
+        ├── LICENSE
+        └── README.md
+```
+
+### 3. ڕێکخستنی Autoload
+
+لە فایلە `composer.json` ـەکەی پڕۆژەکەتدا `namespace` ـی پاکەتەکە لە بەشی `autoload` ـی `psr-4` زیاد بکە:
+
+```json
+"autoload": {
+    "psr-4": {
+        "App\\": "app/",
+          "sirwancode\\laravelfakerkurdish\\": "packages/laravel-faker-kurdish/src/"
+    }
+}
+```
+
+### 4. نوێکردنەوەی Autoload
+
+دوای گۆڕینی `composer.json`، فەرمانی خوارەوە جێبەجێ بکە بۆ نوێکردنەوەی `autoload`:
+
+```bash
+composer dump-autoload
+```
+
+### 5. هاوردەکردنی Class
+
+لە Controller ـەکەت یان لە هەر شوێنێک کە دەتەوێت `KuFaker` بەکاربهێنیت، `Class` ـەکە هاوردە بکە:
+
+```php
+use sirwancode\laravelfakerkurdish\KuFaker;
+```
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
 
  ## ⚡ بەکارهێنان Bikaranîn  
 
