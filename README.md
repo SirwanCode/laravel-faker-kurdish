@@ -75,7 +75,7 @@ Add the package namespace to your application's composer.json:
 "autoload": {
     "psr-4": {
         "App\\": "app/",
-        "SirwanCode\\LaravelFakerKurdish\\": "packages/laravel-faker-kurdish/src/"
+        "sirwancode\\laravelfakerkurdish\\": "packages/laravel-faker-kurdish/src/"
     }
 }
  
