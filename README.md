@@ -37,7 +37,67 @@ add Class to your controller or wherever you need
 use sirwancode\laravelfakerkurdish\KuFaker;
 ```
 
+---
+
+### ➿Manual Installation
+
+If you prefer to install Laravel Faker Kurdish manually, follow these steps.
+
+#### 1. Download the package
+
+Download the latest release and extract it.
+
+#### 2. Add the package to your Laravel project
+
+Create a `packages` directory in the root of your Laravel application and place the package inside it.
+
+Your project structure should look like this:
+
+```text
+myproject/
+├── app/
+├── config/
+├── resources/
+├── routes/
+├── vendor/
+└── packages/
+    └── laravel-faker-kurdish/
+        ├── src/
+        ├── composer.json
+        ├── LICENSE
+        └── README.md
  
+```
+#### 3. Configure autoloading
+Add the package namespace to your application's composer.json:
+
+```text
+"autoload": {
+    "psr-4": {
+        "App\\": "app/",
+        "SirwanCode\\LaravelFakerKurdish\\": "packages/laravel-faker-kurdish/src/"
+    }
+}
+ 
+```
+
+#### 4.Rebuilds autoload index
+run following command
+
+```bash
+composer dump-autoload
+ 
+```
+
+#### 5.add Class to your controller or wherever you need
+```php 
+use sirwancode\laravelfakerkurdish\KuFaker;
+```
+
+
+
+---
+
 
 ## ⚡ Usage  
 
